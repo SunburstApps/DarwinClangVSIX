@@ -1,0 +1,8 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <RemoteRootDir>~/Library/Developer/VCRemote</RemoteRootDir>
+
+    <!-- For some reason, this is not set by the Linux targets. It is required for ProjectReferences to be added to the linkline. -->
+    <_LinkImportLibraryTemp>true</_LinkImportLibraryTemp>
+  </PropertyGroup>
+</Project>
