@@ -4,7 +4,7 @@
         <Identity Id="Sunburst.VisualStudio.DarwinClangSupport" Version="1.0" Language="en-US" Publisher="William Kent" />
         <DisplayName>Visual C++ Darwin Support</DisplayName>
         <Description xml:space="preserve">This extension adds build-time support for Darwin (macOS) hosts to Visual C++ Tools for Linux.</Description>
-        <License>LICENSE.TXT</License>
+        <License>VsixLicense.txt</License>
     </Metadata>
     <Installation AllUsers="true">
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />

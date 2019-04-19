@@ -68,10 +68,9 @@
     <EmbeddedResource Include="VSPackage.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\LICENSE.TXT">
-      <Link>LICENSE.TXT</Link>
-      <IncludeInVSIX>true</IncludeInVSIX>
+    <Content Include="VsixLicense.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
