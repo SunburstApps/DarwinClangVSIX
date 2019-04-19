@@ -1,0 +1,46 @@
+﻿<Project>
+  <Target Name="AddToolsetTargetsFiles" BeforeTargets="BeforeBuild">
+    <ItemGroup>
+      <_ToolsetTargets Include="VCTargets\Toolset.props" />
+      <_ToolsetTargets Include="VCTargets\Toolset.targets" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="@(_ToolsetTargets)">
+        <IncludeInVSIX>true</IncludeInVSIX>
+        <InstallRoot>MSBuild</InstallRoot>
+        <VSIXSubPath>Microsoft\VC\v160\Application Type\Linux\1.0\Platforms\x86\PlatformToolsets\DarwinClang</VSIXSubPath>
+      </Content>
+
+      <Content Include="@(_ToolsetTargets)">
+        <IncludeInVSIX>true</IncludeInVSIX>
+        <InstallRoot>MSBuild</InstallRoot>
+        <VSIXSubPath>Microsoft\VC\v160\Application Type\Linux\1.0\Platforms\x64\PlatformToolsets\DarwinClang</VSIXSubPath>
+      </Content>
+
+      <Content Include="@(_ToolsetTargets)">
+        <IncludeInVSIX>true</IncludeInVSIX>
+        <InstallRoot>MSBuild</InstallRoot>
+        <VSIXSubPath>Microsoft\VC\v160\Application Type\Linux\1.0\Platforms\ARM\PlatformToolsets\DarwinClang</VSIXSubPath>
+      </Content>
+
+      <Content Include="@(_ToolsetTargets)">
+        <IncludeInVSIX>true</IncludeInVSIX>
+        <InstallRoot>MSBuild</InstallRoot>
+        <VSIXSubPath>Microsoft\VC\v160\Application Type\Linux\1.0\Platforms\ARM64\PlatformToolsets\DarwinClang</VSIXSubPath>
+      </Content>
+
+      <Content Include="@(_ToolsetTargets)">
+        <IncludeInVSIX>true</IncludeInVSIX>
+        <InstallRoot>MSBuild</InstallRoot>
+        <VSIXSubPath>Microsoft\VC\v160\Application Type\Linux\1.0\Platforms\MIPS\PlatformToolsets\DarwinClang</VSIXSubPath>
+      </Content>
+
+      <Content Include="VCTargets\remote_ld_darwin.xml">
+        <IncludeInVSIX>true</IncludeInVSIX>
+        <InstallRoot>MSBuild</InstallRoot>
+        <VSIXSubPath>Microsoft\VC\v160\Application Type\Linux\1.0\1033</VSIXSubPath>
+      </Content>
+    </ItemGroup>
+  </Target>
+</Project>
