@@ -5,6 +5,7 @@
         <DisplayName>Visual C++ Darwin Support</DisplayName>
         <Description xml:space="preserve">This extension adds build-time support for Darwin (macOS) hosts to Visual C++ Tools for Linux.</Description>
         <License>VsixLicense.txt</License>
+        <ReleaseNotes>VsixReleaseNotes.txt</ReleaseNotes>
     </Metadata>
     <Installation AllUsers="true">
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
