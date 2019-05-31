@@ -70,8 +70,10 @@ Copyright (C) 2018 William Kent. All rights reserved.
 
     <!-- Translate the SharedLibrarySearchPath into ld64-compatible syntax. -->
     <ItemGroup>
+      <_SharedLibrarySearchPath Include="%(Link.SharedLibrarySearchPath)" />
+
       <Link>
-        <AdditionalOptions Condition="'%(Link.SharedLibrarySearchPath)' != ''">-rpath $([System.String]::Join(' -rpath ', $([System.String]::Copy('%(SharedLibrarySearchPath)').Split(';')))) %(Link.AdditionalOptions)</AdditionalOptions>
+        <AdditionalOptions>@(_SharedLibrarySearchPath -> '-rpath "%(Identity)"', ' ') %(Link.AdditionalOptions)</AdditionalOptions>
         <SharedLibrarySearchPath />
       </Link>
     </ItemGroup>
