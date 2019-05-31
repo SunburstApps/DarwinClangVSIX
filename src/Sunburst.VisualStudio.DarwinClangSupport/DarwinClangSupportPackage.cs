@@ -7,7 +7,7 @@ using Task = System.Threading.Tasks.Task;
 namespace Sunburst.VisualStudio.DarwinClangSupport
 {
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-    [InstalledProductRegistration("#110", "#112", "1.0")]
+    [InstalledProductRegistration("#110", "#112", "1.1")]
     [Guid(PackageGuidString)]
     public sealed class DarwinClangSupportPackage : AsyncPackage
     {

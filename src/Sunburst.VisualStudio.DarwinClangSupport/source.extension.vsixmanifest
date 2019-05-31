@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Sunburst.VisualStudio.DarwinClangSupport" Version="1.0" Language="en-US" Publisher="William Kent" />
+        <Identity Id="Sunburst.VisualStudio.DarwinClangSupport" Version="1.1" Language="en-US" Publisher="William Kent" />
         <DisplayName>Visual C++ Darwin Support</DisplayName>
         <Description xml:space="preserve">This extension adds build-time support for Darwin (macOS) hosts to Visual C++ Tools for Linux.</Description>
         <License>VsixLicense.txt</License>
