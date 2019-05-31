@@ -24,7 +24,7 @@ Copyright (C) 2018 William Kent. All rights reserved.
   <ItemGroup>
     <DesktopDebuggerPages Include="$(LinuxCommonTargetsPath)$(LangID)\remote_debugger_linux.xml" />
   </ItemGroup>
-  
+
   <!-- Patch the extension type as the common targets insists it cannot be empty -->
   <PropertyGroup>
     <_TargetExt>$(TargetExt)</_TargetExt>
@@ -36,7 +36,7 @@ Copyright (C) 2018 William Kent. All rights reserved.
 
   <!-- Linux specific targets to override ClCompile, Link & Lib -->
   <Import Project="$(LinuxCommonTargetsPath)\Linux.targets" />
- 
+
   <Import Project="$(MSBuildThisFileDirectory)ImportAfter\*.targets" Condition="Exists('$(MSBuildThisFileDirectory)ImportAfter')" />
 
   <Target Name="OverrideDarwinLdFlags" BeforeTargets="Link">
