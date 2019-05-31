@@ -1,5 +1,7 @@
 # Darwin Clang Support VSIX
 
+[Download on the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=william-kent.DarwinClangSupport)
+
 This repository contains a Visual Studio extension that adds proper Darwin (macOS)
 support to the Visual C++ Tools for Linux. The in-box targets are designed for GCC
 and the GNU binutils linker. macOS uses Clang and the ld64 linker, and they are not
